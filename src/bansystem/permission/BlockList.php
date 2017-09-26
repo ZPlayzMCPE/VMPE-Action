@@ -26,7 +26,7 @@ class BlockList extends BanList {
     public function addBan(string $target, string $reason = null, DateTime $expires = null, string $source = null) {
         $entry = new BlockEntry($target);
         $entry->setReason($reason != null ? $reason : $entry->getReason());
-        $entry->setExpires(DateTime $expires);
+        $entry->setExpires($expires);
         $entry->setSource($source != null ? $source : $entry->getSource());
         parent::addBan($entry->getName(), $entry->getReason(), $entry->getExpires(), $entry->getSource());;
     }
