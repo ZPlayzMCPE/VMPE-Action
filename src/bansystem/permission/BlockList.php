@@ -28,6 +28,6 @@ class BlockList extends BanList {
         $entry->setReason($reason != null ? $reason : $entry->getReason());
         $entry->setExpires($expires);
         $entry->setSource($source != null ? $source : $entry->getSource());
-        parent::addBan($entry->getName(), $entry->getReason(), $entry->getExpires(), $entry->getSource());;
+        parent::addBan(string $entry->getName(), $entry->getReason(), $entry->getExpires(), $entry->getSource());;
     }
 }
