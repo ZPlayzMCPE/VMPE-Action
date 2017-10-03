@@ -20,7 +20,7 @@ class BlockList extends BanList {
      * 
      * @param string $target
      * @param string $reason
-     * @param DateTime $expires
+     * @param \DateTime $expires
      * @param string $source
      */
     public function addBan(string $target, string $reason = null, \DateTime $expires = null, string $source = null) {
